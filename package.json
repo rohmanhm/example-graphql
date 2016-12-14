@@ -1,0 +1,46 @@
+{
+  "name": "example-graphql",
+  "version": "0.0.1",
+  "description": "Simple Example GraphQL Application using Postgres",
+  "keywords": [
+    "GraphQL",
+    "PostgreSQL",
+    "Postgres",
+    "Sequelize",
+    "Example"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rohmanhm/example-graphql.git"
+  },
+  "homepage": "https://github.com/rohmanhm/example-graphql",
+  "main": "index.js",
+  "author": "Muhammad Habib Rohman <mhrohman@live.com>",
+  "license": "MIT",
+  "scripts": {
+    "migrate": "./node_modules/.bin/babel-node src/models/index.js",
+    "seeder": "./node_modules/.bin/babel-node src/seeds/index.js",
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": "7.2.x",
+    "npm": "3.10.x"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-core": "^6.20.0",
+    "babel-preset-latest": "^6.16.0",
+    "babel-register": "^6.18.0",
+    "express": "^4.14.0",
+    "express-graphql": "^0.6.1",
+    "faker": "^3.1.0",
+    "graphql": "^0.8.2",
+    "pg": "^6.1.1",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^3.27.0"
+  },
+  "dependencies": {
+    "graphiql": "^0.8.0",
+    "lodash": "^4.17.2"
+  }
+}
