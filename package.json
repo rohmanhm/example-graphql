@@ -35,6 +35,7 @@
     "express-graphql": "^0.6.1",
     "faker": "^3.1.0",
     "graphql": "^0.8.2",
+    "graphql-sequelize": "^4.0.5",
     "pg": "^6.1.1",
     "pg-hstore": "^2.3.2",
     "sequelize": "^3.27.0"

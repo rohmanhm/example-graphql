@@ -7,9 +7,11 @@ import {
   UserType,
   PostType
 } from './type';
+import UserSchema from './UserSchema';
+import PostSchema from './PostSchema';
 
 // Query default
-const Schema = new GraphQLObjectType({
+export default new GraphQLObjectType({
   name: 'Query',
   description: 'Query Root Schema',
   fields() {
@@ -18,7 +20,7 @@ const Schema = new GraphQLObjectType({
       users: {
         type: new GraphQLList(UserSchema),
         args: UserType.getFields(),
-        resolve(_, args) {
+        resolve(__, args) {
           return Db.models.user.findAll({
             where: args
           });
@@ -28,7 +30,7 @@ const Schema = new GraphQLObjectType({
       posts: {
         type: new GraphQLList(PostSchema),
         args: PostType.getFields(),
-        resolve(_, args) {
+        resolve(__, args) {
           return Db.models.post.findAll({
             where: args
           });
@@ -38,5 +40,3 @@ const Schema = new GraphQLObjectType({
     }
   }
 });
-
-export default Schema;

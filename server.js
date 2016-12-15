@@ -1,6 +1,6 @@
 import Express from 'express';
 import GraphQLHTTP from 'express-graphql';
-import Schema from './src/schema';
+import { Schema } from './src/schema';
 
 const HOST = process.env.HOSTSERVER || 'localhost';
 const PATH = process.env.PATHSERVER || '/graphql';
