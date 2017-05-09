@@ -1,4 +1,6 @@
 # Simple GraphQL Example
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/rohmanhm/example-graphql.svg)](https://greenkeeper.io/)
 Just a simple **GraphQL Example** with **[NodeJS](https://nodejs.org/)** and **PostgreSQL Driver**.
 
 ## Setup
